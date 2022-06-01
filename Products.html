@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Asm 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="container mx-auto max-w-6xl">
+        <div class="md:flex justify-between items-center">
+            <div>
+                <a href="#logo">
+                    <h1 class="text-3xl font-extrabold pt-10">
+                        Fudo<span class="text-red-500">.</span>
+                    </h1>
+                </a>
+            </div>
+            <div class="md:text-lg font-semibold text-slate-700 pt-8 md:pt-12">
+                <a href="#1" class="mx-2 md:mx-6 text-red-500">Home</a>
+                <a href="#2" class="md:mx-6 hover:text-red-500">Products</a>
+                <a href="#3" class="mx-2 md:mx-6 hover:text-red-500">About Us</a>
+                <a href="#4" class="md:mx-6 hover:text-red-500">Contact Us</a>
+            </div>
+            <div class="flex pt-10">
+                <a href="#icon" class="pt-3"><svg
+              xmlns="http://www.w3.org/2000/svg "
+              class="h-7 w-7"
+              fill="none "
+              viewBox="0 0 24 24 "
+              stroke="currentColor "
+              stroke-width="2 "
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round "
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z "
+              /></svg
+          ></a>
+                <button class="sm:text-xs md:py-3 px-5 text-sm text-red-500 font-bold border-2 border-red-500 rounded mx-5">
+            Sign In
+          </button>
+                <button class="sm:text-xs text-sm text-white font-bold rounded bg-red-500 px-5">
+            Sign Up
+          </button>
+            </div>
+        </div>
+        <div class="banner">
+            <img src="images/Rectangle 1372.png" class="my-[48px]" />
+        </div>
+        <div class="grid md:grid-cols-4 md:flex gap-2">
+            <div>
+                <p class="mb-6">
+                    <a href="#1" class="text-xl font-semibold hover:text-red-500">Breakfast</a
+            >
+          </p>
+          <p class="mb-6">
+            <a href="#2" class="text-xl font-semibold hover:text-red-500"
+              >Vegan</a
+            >
+          </p>
+          <p class="mb-6">
+            <a href="#3" class="text-xl font-semibold hover:text-red-500"
+              >Meat</a
+            >
+          </p>
+          <p class="mb-6">
+            <a href="#4" class="text-xl font-semibold hover:text-red-500"
+              >Dessert</a
+            >
+          </p>
+          <p class="mb-6">
+            <a href="#5" class="text-xl font-semibold hover:text-red-500"
+              >Lunch</a
+            >
+          </p>
+          <p class="mb-6">
+            <a href="#6" class="text-xl font-semibold hover:text-red-500"
+              >Chocolate</a
+            >
+          </p>
+        </div>
+        <div class="md:flex grid md:grid-cols-3 gap-10">
+          <div class="shadow transition hover:shadow-2xl group">
+            <img
+              src="images/image 26 (3).png"
+              alt="food1"
+              class="rounded-3xl"
+            />
+            <h3
+              class="text-lg mt-5 mb-2 font-semibold group-hover:text-red-500"
+            >
+              Fresh and Healthy Mixed Mayonnaise Salad
+            </h3>
+            <p class="text-xl text-red-500 font-semibold">$30</p>
+            <button
+              class="bg-[#111928] text-white font-semibold py-2 w-full rounded-md mt-3 group-hover:bg-red-500"
+            >
+              Add To Cart
+            </button>
+          </div>
+          <div class="shadow transition hover:shadow-2xl group grid">
+            <img
+              src="images/image 26 (4).png"
+              alt="food2"
+              class="rounded-3xl"
+            />
+            <h3
+              class="text-lg mt-5 mb-2 font-semibold group-hover:text-red-500"
+            >
+              The Creamiest Creamy Chicken
+            </h3>
+            <p class="text-xl text-red-500 font-semibold">$30</p>
+            <button
+              class="bg-[#111928] text-white font-semibold py-2 w-full rounded-md mt-3 group-hover:bg-red-500"
+            >
+              Add To Cart
+            </button>
+          </div>
+          <div class="shadow transition hover:shadow-2xl group">
+            <img
+              src="images/image 26 (5).png"
+              alt="food3"
+              class="rounded-3xl"
+            />
+            <h3
+              class="text-lg mt-5 mb-2 font-semibold group-hover:text-red-500"
+            >
+              Fruity Pancake with Orange & Blueberry
+            </h3>
+            <p class="text-xl text-red-500 font-semibold">$30</p>
+            <button
+              class="bg-[#111928] text-white font-semibold py-2 w-full rounded-md mt-3 group-hover:bg-red-500"
+            >
+              Add To Cart
+            </button>
+          </div>
+          <!-- <div class="flex grid col-span-3 grid-cols-3 gap-10"> -->
+          <div class="shadow transition hover:shadow-2xl group">
+            <img
+              src="images/image 26 (3).png"
+              alt="food1"
+              class="rounded-3xl"
+            />
+            <h3
+              class="text-lg mt-5 mb-2 font-semibold group-hover:text-red-500"
+            >
+              Fresh and Healthy Mixed Mayonnaise Salad
+            </h3>
+            <p class="text-xl text-red-500 font-semibold">$30</p>
+            <button
+              class="bg-[#111928] text-white font-semibold py-2 w-full rounded-md mt-3 group-hover:bg-red-500"
+            >
+              Add To Cart
+            </button>
+          </div>
+          <div
+            class="shadow transition hover:shadow-2xl group grid place-items-stretch"
+          >
+            <img
+              src="images/image 26 (4).png"
+              alt="food2"
+              class="rounded-3xl"
+            />
+            <h3
+              class="text-lg mt-5 mb-2 font-semibold group-hover:text-red-500"
+            >
+              The Creamiest Creamy Chicken
+            </h3>
+            <p class="text-xl text-red-500 font-semibold">$30</p>
+            <button
+              class="bg-[#111928] text-white font-semibold py-2 w-full rounded-md mt-3 group-hover:bg-red-500"
+            >
+              Add To Cart
+            </button>
+          </div>
+          <div class="shadow transition hover:shadow-2xl group">
+            <img
+              src="images/image 26 (5).png"
+              alt="food3"
+              class="rounded-3xl"
+            />
+            <h3
+              class="text-lg mt-5 mb-2 font-semibold group-hover:text-red-500"
+            >
+              Fruity Pancake with Orange & Blueberry
+            </h3>
+            <p class="text-xl text-red-500 font-semibold">$30</p>
+            <button
+              class="bg-[#111928] text-white font-semibold py-2 w-full rounded-md mt-3 group-hover:bg-red-500"
+            >
+              Add To Cart
+            </button>
+          </div>
+        </div>
+        <!-- ===one row=== -->
+      </div>
+      <!-- ===one row=== -->
+
+      <hr />
+      <div class="flex justify-between items-center pb-10 pt-10">
+        <div>
+          <h1 class="text-2xl font-extrabold">
+            Fundo<span class="text-red-500">.</span>
+          </h1>
+        </div>
+        <div class="flex">
+          <a
+            href="#1 "
+            class="mx-2 md:mx-6 text-lg text-[#5D5D5D] font-semibold font-semibold hover:text-red-500"
+            >Home</a
+          >
+          <a
+            href="#2 "
+            class="mx-2 md:mx-6 text-lg text-[#5D5D5D] font-semibold font-semibold hover:text-red-500"
+            >Products</a
+          >
+          <a
+            href="#3 "
+            class="mx-2 md:mx-6 text-lg text-[#5D5D5D] font-semibold font-semibold hover:text-red-500"
+            >About Us</a
+          >
+          <a
+            href="#4 "
+            class="mx-2 md:mx-6 text-lg text-[#5D5D5D] font-semibold font-semibold hover:text-red-500"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
