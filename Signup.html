@@ -4,84 +4,65 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Form 2</title>
+    <title>Sign Up</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .error {
+            margin-top: 5px;
+            color: red;
+            font-size: 13px;
+        }
+    </style>
 </head>
 
 <body>
     <div class="mx-auto max-w-md">
-        <div class="text-2xl text-center font-extrabold mt-8">
-            Fudo<span class="text-red-500">.</span>
-        </div>
+        <a href="index.html">
+            <div class="text-2xl text-center font-extrabold mt-8">
+                Fudo<span class="text-red-500">.</span>
+            </div>
+        </a>
         <div class="text-center mt-[120px]">
             <p class="text-base text-[#2D3748] font-semibold my-4">Welcome back</p>
             <h1 class="text-[#1A202C] text-[32px] font-black">Create Account</h1>
         </div>
-        <form class="pt-[48px] pb-[100px]">
+        <form class="pt-[48px] pb-[100px]" name="frmForm" onsubmit="return createacc()">
             <div class="pb-[17px]">
                 <div class="mb-2">
-                    <label for="email" class="text-[#4A5568] text-base font-semibold">Email</label
-            >
-          </div>
-          <input
-            id="email"
-            type="text"
-            placeholder="John.snow@gmail.com"
-            class="border-2 border-[#37A9CD] rounded-md pl-[17px] py-[17px] pr-[235px]"
-          />
-        </div>
-        <div class="pb-[17px]">
-          <div class="mb-2">
-            <label for="fullname" class="text-[#4A5568] text-base font-semibold"
-              >Fullname</label
-            >
-          </div>
-          <input
-            id="fullname"
-            type="text"
-            placeholder="John.snow@gmail.com"
-            class="border-2 border-[#37A9CD] rounded-md pl-[17px] py-[17px] pr-[235px]"
-          />
-        </div>
-        <div class="pb-[17px]">
-          <div class="mb-2">
-            <label
-              for="password "
-              class="text-[#4A5568] text-base font-semibold"
-              >Password</label
-            >
-          </div>
-          <input
-            id="password "
-            type="password "
-            placeholder="********* "
-            class="border-2 border-[#37A9CD] rounded-md pl-[17px] py-[17px] pr-[235px]"
-          />
-        </div>
-        <div>
-          <div class="mb-2">
-            <label
-              for="re-password "
-              class="text-[#4A5568] text-base font-semibold"
-              >Re-Password</label
-            >
-          </div>
-          <input
-            id="re-password "
-            type="password "
-            placeholder="********* "
-            class="border-2 border-[#37A9CD] rounded-md pl-[17px] py-[17px] pr-[235px]"
-          />
-        </div>
-        <button
-          class="bg-[#37A9CD] border-2 border-[#37A9CD] rounded-md py-4 w-[439px] mt-[30px] hover:bg-sky-800 text-white font-semibold text-base"
-        >
-          Login now
-        </button>
-      </form>
+                    <label for="email" class="text-[#4A5568] text-base font-semibold">Email</label>
+                </div>
+                <input id="email" name="txtEmail" type="text" placeholder="John.snow@gmail.com" class="border-2 border-[#37A9CD] rounded-md pl-[17px] py-[17px] pr-[235px]" />
+                <p class="error" id="errEmail"></p>
+            </div>
+            <div class="pb-[17px]">
+                <div class="mb-2">
+                    <label for="fullname" class="text-[#4A5568] text-base font-semibold">Fullname</label>
+                </div>
+                <input id="fullname" name="txtName" type="text" placeholder="John.snow" class="border-2 border-[#37A9CD] rounded-md pl-[17px] py-[17px] pr-[235px]" />
+                <p class="error" id="errName"></p>
+            </div>
+            <div class="pb-[17px]">
+                <div class="mb-2">
+                    <label for="password" class="text-[#4A5568] text-base font-semibold">Password</label>
+                </div>
+                <input id="password" type="password" name="pdPass" placeholder="*********" class="border-2 border-[#37A9CD] rounded-md pl-[17px] py-[17px] pr-[235px]" />
+                <p class="error" id="errPass"></p>
+            </div>
+            <div>
+                <div class="mb-2">
+                    <label for="re-password " class="text-[#4A5568] text-base font-semibold">Re-Password</label>
+                </div>
+                <input id="re-password" type="password" name="rePass" placeholder="********* " class="border-2 border-[#37A9CD] rounded-md pl-[17px] py-[17px] pr-[235px]" />
+                <p class="error" id="errRePass"></p>
+            </div>
+            <input type="submit" value="Create Now" class="bg-[#37A9CD] border-2 border-[#37A9CD] rounded-md py-4 w-[439px] mt-[30px] hover:bg-sky-800 text-white font-semibold text-base">
+            </input>
+        </form>
     </div>
-  </body>
+    <script src="./js/signup.js"></script>
+</body>
+
 </html>

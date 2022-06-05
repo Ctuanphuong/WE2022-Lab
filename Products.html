@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Asm 3</title>
+    <title>Products</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
@@ -15,15 +15,15 @@
     <div class="container mx-auto max-w-6xl">
         <div class="md:flex justify-between items-center">
             <div>
-                <a href="#logo">
+                <a href="index.html">
                     <h1 class="text-3xl font-extrabold pt-10">
                         Fudo<span class="text-red-500">.</span>
                     </h1>
                 </a>
             </div>
             <div class="md:text-lg font-semibold text-slate-700 pt-8 md:pt-12">
-                <a href="#1" class="mx-2 md:mx-6 text-red-500">Home</a>
-                <a href="#2" class="md:mx-6 hover:text-red-500">Products</a>
+                <a href="index.html" class="mx-2 md:mx-6 text-red-500">Home</a>
+                <a href="Products.html" class="md:mx-6 hover:text-red-500">Products</a>
                 <a href="#3" class="mx-2 md:mx-6 hover:text-red-500">About Us</a>
                 <a href="#4" class="md:mx-6 hover:text-red-500">Contact Us</a>
             </div>
@@ -65,81 +65,25 @@
                     <a href="#6" class="text-xl font-semibold hover:text-red-500">Chocolate</a>
                 </p>
             </div>
-            <div class="flex grid grid-cols-2 gap-2 md:grid-cols-3 gap-10 ">
-                <div class="shadow transition hover:shadow-2xl group">
-                    <img src="images/image 26 (3).png" alt="food1" class="rounded-3xl" />
-                    <h3 class="text-lg mt-5 mb-2 font-semibold group-hover:text-red-500">
-                        Fresh and Healthy Mixed Mayonnaise Salad
-                    </h3>
-                    <p class="text-xl text-red-500 font-semibold">$30</p>
-                    <button class="bg-[#111928] text-white font-semibold py-2 w-full rounded-md mt-3 group-hover:bg-red-500">Add To Cart</button>
-                </div>
-                <div class=" shadow transition hover:shadow-2xl group grid ">
-                    <img src="images/image 26 (4).png " alt="food2 " class="rounded-3xl " />
-                    <h3 class="text-lg mt-5 mb-2 font-semibold group-hover:text-red-500 ">
-                        The Creamiest Creamy Chicken
-                    </h3>
-                    <p class="text-xl text-red-500 font-semibold ">$30</p>
-                    <button class="bg-[#111928] text-white font-semibold py-2 w-full rounded-md mt-3 group-hover:bg-red-500 ">
-            Add To Cart
-          </button>
-                </div>
-                <div class="shadow transition hover:shadow-2xl group ">
-                    <img src="images/image 26 (5).png " alt="food3 " class="rounded-3xl " />
-                    <h3 class="text-lg mt-5 mb-2 font-semibold group-hover:text-red-500 ">
-                        Fruity Pancake with Orange & Blueberry
-                    </h3>
-                    <p class="text-xl text-red-500 font-semibold ">$30</p>
-                    <button class="bg-[#111928] text-white font-semibold py-2 w-full rounded-md mt-3 group-hover:bg-red-500 ">
-            Add To Cart
-          </button>
-                </div>
-                <!-- <div class="flex grid col-span-3 grid-cols-3 gap-10 "> -->
-                <div class="shadow transition hover:shadow-2xl group ">
-                    <img src="images/image 26 (3).png " alt="food1 " class="rounded-3xl " />
-                    <h3 class="text-lg mt-5 mb-2 font-semibold group-hover:text-red-500 ">
-                        Fresh and Healthy Mixed Mayonnaise Salad
-                    </h3>
-                    <p class="text-xl text-red-500 font-semibold ">$30</p>
-                    <button class="bg-[#111928] text-white font-semibold py-2 w-full rounded-md mt-3 group-hover:bg-red-500 ">
-            Add To Cart
-          </button>
-                </div>
-                <div class="shadow transition hover:shadow-2xl group grid place-items-stretch ">
-                    <img src="images/image 26 (4).png " alt="food2 " class="rounded-3xl " />
-                    <h3 class="text-lg mt-5 mb-2 font-semibold group-hover:text-red-500 ">
-                        The Creamiest Creamy Chicken
-                    </h3>
-                    <p class="text-xl text-red-500 font-semibold ">$30</p>
-                    <button class="bg-[#111928] text-white font-semibold py-2 w-full rounded-md mt-3 group-hover:bg-red-500 ">
-            Add To Cart
-          </button>
-                </div>
-                <div class="shadow transition hover:shadow-2xl group ">
-                    <img src="images/image 26 (5).png " alt="food3 " class="rounded-3xl " />
-                    <h3 class="text-lg mt-5 mb-2 font-semibold group-hover:text-red-500 ">
-                        Fruity Pancake with Orange & Blueberry
-                    </h3>
-                    <p class="text-xl text-red-500 font-semibold ">$30</p>
-                    <button class="bg-[#111928] text-white font-semibold py-2 w-full rounded-md mt-3 group-hover:bg-red-500 ">
-            Add To Cart
-          </button>
-                </div>
+            <div class="flex grid grid-cols-2 gap-2 md:grid-cols-3 gap-10 mb-[70px]" id="products">
+
             </div>
             <!-- ===one row=== -->
         </div>
         <!-- ===one row=== -->
 
-        <hr />
-        <div class="flex justify-between items-center pb-10 pt-10 ">
+        <hr>
+        <div class="flex justify-between items-center pb-10 mt-[20px]">
             <div>
-                <h1 class="text-2xl font-extrabold ">
-                    Fundo<span class="text-red-500 ">.</span>
-                </h1>
+                <a href="index.html">
+                    <h1 class="text-2xl font-extrabold ">
+                        Fundo<span class="text-red-500 ">.</span>
+                    </h1>
+                </a>
             </div>
             <div class="flex ">
-                <a href="#1 " class="mx-2 md:mx-6 text-lg text-[#5D5D5D] font-semibold font-semibold hover:text-red-500 ">Home</a>
-                <a href="#2 " class="mx-2 md:mx-6 text-lg text-[#5D5D5D] font-semibold font-semibold hover:text-red-500 ">Products</a>
+                <a href="index.html" class=" mx-2 md:mx-6 text-lg text-[#5D5D5D] font-semibold font-semibold hover:text-red-500 ">Home</a>
+                <a href="Products.html" class="mx-2 md:mx-6 text-lg text-[#5D5D5D] font-semibold font-semibold hover:text-red-500 ">Products</a>
                 <a href="#3 " class="mx-2 md:mx-6 text-lg text-[#5D5D5D] font-semibold font-semibold hover:text-red-500 ">About
           Us</a>
                 <a href="#4 " class="mx-2 md:mx-6 text-lg text-[#5D5D5D] font-semibold font-semibold hover:text-red-500 ">Contact
@@ -147,6 +91,7 @@
             </div>
         </div>
     </div>
+    <script type="module" src="./js/products.js"></script>
 </body>
 
 </html>
