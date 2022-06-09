@@ -6,7 +6,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Sign In</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href=''>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .error {
@@ -33,25 +33,30 @@
                 <p class="error" id="errEmail"></p>
             </div>
             <div>
-                <div class="mb-2"><label for="password" class="text-[#4A5568] text-base font-semibold">Password</label></div>
+                <div class="mb-2">
+                    <label for="password" class="text-[#4A5568] text-base font-semibold">Password</label>
+                </div>
                 <input id="password" name="pdPass" type="password" placeholder="********* " class="border-2 border-[#37A9CD] rounded-md pl-[17px] py-[17px] pr-[235px] ">
                 <p class="error" id="errPass"></p>
             </div>
-            <input type="submit" value="Login Now" class="bg-[#37A9CD] border-2 border-[#37A9CD] rounded-md py-[16px] w-[439px] mt-[30px] hover:bg-sky-800 text-white font-semibold text-base"></input>
-            <a href="https://myaccount.google.com/intro/signing-in-to-google"><button class="hover:bg-slate-900 flex py-4 border-2 border-[#2D3748] bg-[#2D3748] text-base text-white text-semibold rounded-md mt-[15px] w-[439px] "><img src="images/iconfinder_Google_1298745 1.png " alt=" " class="ml-[120px]">
-            <span class="ml-3 ">Or sign-in with google</span>
-            </button>
+            <input type="submit" value="Login Now" class="bg-[#37A9CD] border-2 border-[#37A9CD] rounded-md py-[16px] w-[439px] mt-[30px] hover:bg-sky-800 text-white font-semibold text-base">
+            <button class="hover:bg-slate-900 flex py-4 border-2 border-[#2D3748] bg-[#2D3748] text-base text-white text-semibold rounded-md mt-[15px] w-[439px] ">
+                    <img src="https://res.cloudinary.com/phuong-fpoly/image/upload/v1654737418/Lab3/iconfinder_Google_1298745_1_ccoqr9.png" alt=" " class="ml-[120px]">
+                    <span class="ml-3 ">Or sign-in with google</span>
+                </button>
 
         </form>
         <a href="">
             <p class="mb-4 text-[#37A9CD] font-bold text-lg mt-8 text-center hover:text-red-500">Forgot password?</p>
         </a>
-            <div class="flex justify-center pb-[100px] ">
-                <p class="text-[#616161] font-bold text-lg ">Don't have an account ?</p>
-                <a href="Signup.html"><span class="mb-4 text-[#37A9CD] font-bold text-lg ml-2 hover:text-red-500"> Join free today</span></a>
-            </div>
+        <div class="flex justify-center pb-[100px]">
+            <p class="text-[#616161] font-bold text-lg">Don't have an account ?</p>
+            <a href="Signup.html">
+                <span class="mb-4 text-[#37A9CD] font-bold text-lg ml-2 hover:text-red-500"> Join free today</span>
+            </a>
+        </div>
     </div>
-    </div>
+
     <script src="./js/signin.js"></script>
 </body>
 
