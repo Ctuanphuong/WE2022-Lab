@@ -49,26 +49,26 @@ function showProducts(productmain) {
     for (let i = 0; i < productmain.length; i++) {
         const product = productmain[i];
         result += `
-        <div class="shadow transition hover:shadow-xl group mb-8 md:mb-0">
-        <img src="${product.img}" class="w-[400px] rounded-3xl" />
-        <a href="#1">
-            <h3 class="text-lg text-red-500 font-semibold mt-[24px] group-hover:text-green-600">
-                <a href="Detail.html?id=${product.id}">${product.name}</a>
-            </h3>
-        </a>
-        <div class="flex">
-            <img src="images/Vector.png " class="w-[18px] h-[18px] mr-[13px] mt-[27px]" />
-            <p class="text-base text-slate-700 font-medium mt-[25px] mr-[37px]">
-                ${product.time} Minutes
-            </p>
-            <img src="images/Vector (1).png " class="mt-[25px] w-[8px] h-[19px]" />
-            <img src="images/Vector (2).png " class="mt-[25px] w-[7px] h-[20px] mr-[14px]" />
-            <p class="text-base text-slate-700 font-medium mt-[25px]">
-                ${product.type}
-            </p>
-        </div>
+    <div class="shadow transition hover:shadow-xl group mb-8 md:mb-0">
+    <img src="${product.img}" class="w-[400px] rounded-3xl" />
+    <a href="#1">
+        <h3 class="text-lg text-red-500 font-semibold mt-[24px] group-hover:text-green-600">
+            <a href="Detail.html?id=${product.id}">${product.name}</a>
+        </h3>
+    </a>
+    <div class="flex">
+        <img src="https://res.cloudinary.com/phuong-fpoly/image/upload/v1654737421/Lab3/Vector_moii4f.png" class="w-[18px] h-[18px] mr-[13px] mt-[27px]" />
+        <p class="text-base text-slate-700 font-medium mt-[25px] mr-[37px]">
+            ${product.time} Minutes
+        </p>
+        <img src="https://res.cloudinary.com/phuong-fpoly/image/upload/v1654737421/Lab3/Vector_1_r1ifxv.png" class="mt-[25px] w-[8px] h-[19px]" />
+        <img src="https://res.cloudinary.com/phuong-fpoly/image/upload/v1654737421/Lab3/Vector_2_jxpwhd.png" class="mt-[25px] w-[7px] h-[20px] mr-[14px]" />
+        <p class="text-base text-slate-700 font-medium mt-[25px]">
+            ${product.type}
+        </p>
     </div>
-        `;
+</div>
+    `;
     }
     return result;
 }

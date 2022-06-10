@@ -44,17 +44,16 @@ const productList = [{
 // Lấy ID trên url
 const id = new URLSearchParams(window.location.search).get("id");
 
-function showProduct(products) {
+function showProducts(products) {
     // Nếu không phải 1 mảng hoặc không có giá trị trong mảng thì return false
     if (!Array.isArray(products) || products.length == 0) return false;
 
     let result = "";
     // Tìm phần tử trong mảng, nếu id trên url == id phần tử trong mảng
-    // thì trả về object đấy
     const product = products.find((item) => item.id == id);
 
     // trả về kết quả là 1 chuỗi
-    result = `<h2 class="text-[20px] md:text-[40px] font-bold">${product.name}</h2>`;
+    result = `<h2 class="text-[20px] md:text-[40px] font-bold md:mb-5">${product.name}</h2>`;
     return result;
 }
 
@@ -64,13 +63,13 @@ function showImage(products) {
 
     let result = "";
     // Tìm phần tử trong mảng, nếu id trên url == id phần tử trong mảng
-    // thì trả về object đấy
+
     const product = products.find((item) => item.id == id);
 
     // trả về kết quả là 1 chuỗi
-    result = `<img src="${product.img}" alt="logo2 " class="w-full h-[200px ]md:h-[421px] rounded-xl/">`;
+    result = `<img src="${product.img}" alt="logo2 " class="w-full h-[200px ]md:h-[421px] rounded-xl ">`;
     return result;
 }
 
-document.getElementById("Detail").innerHTML = showProduct(productList);
+document.getElementById("Detail").innerHTML = showProducts(productList);
 document.getElementById("Image").innerHTML = showImage(productList);
